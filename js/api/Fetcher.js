@@ -19,16 +19,43 @@ class Fetcher{
         try{
     
             const fetchedData = await fetch(`${this.baseUrl}/${url}`);
-            console.log(fetchedData);
-            console.log(`${this.baseUrl}/${url}`);
+           
             const data = await fetchedData.json();
-            console.log(fetchedData + "In Json");
+            
             return data;
     
         }catch(err){
            console.log(err);
         }
     
+    }
+
+    async post(url, data){
+
+  
+
+        try{
+            
+            const posting = await window.fetch(`${this.baseUrl}/${url}`,{
+
+                method: 'POST',
+                body:JSON.stringify(data),
+                headers:{'Content-Type': 'application/json'}
+
+            });
+
+       
+
+            const result = await posting.json();
+            return result;
+           
+
+        }catch(err){
+
+            console.log(err);
+
+        }
+
     }
     
 }

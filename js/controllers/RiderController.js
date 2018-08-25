@@ -15,5 +15,13 @@ class RiderController{
         
         return RiderObjs;
     }
+
+    async create(rider){
+
+        const data = rider.properties;
+        console.log('Data to be posted is : '+ data);
+        const result = await this.fetcher.post('riders', data);
+        return result;
+    }
 }
 
