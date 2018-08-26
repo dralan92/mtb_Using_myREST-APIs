@@ -1,0 +1,209 @@
+* {
+			    box-sizing: border-box;
+			}
+			
+			body {
+			    margin: 0;
+			    font-family: Arial;
+			    font-size: 17px;
+			}
+			
+			#myVideo {
+			    position: fixed;
+			    right: 0;
+			    bottom: 0;
+			    min-width: 100%; 
+			    min-height: 100%;
+			}
+			
+			.content {
+			    position: fixed;
+			    top: 0;
+			    background: rgba(0, 0, 0, 0.5);
+			    color: #f1f1f1;
+			    width: 100%;
+			    padding: 20px;
+			}
+			
+			#myBtn {
+			    width: 200px;
+			    font-size: 18px;
+			    padding: 10px;
+			    border: none;
+			    background: #000;
+			    color: #fff;
+			    cursor: pointer;
+			}
+			
+			#myBtn:hover {
+			    background: #ddd;
+			    color: black;
+			}
+			
+/*
+  
+ .fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+   position: fixed;
+   				top: 85px;
+			    right: 0;
+			    bottom: 0;
+			    min-width: 100%; 
+			    min-height: 100%;
+}
+
+*/
+.fullscreen-bg__video {
+  				position:relative;
+   				top: 0px;
+			    right: 0;
+			    bottom: 0;
+			    min-width: 100%; 
+			    min-height: 100%;
+}
+#mainButtonDiv{
+	position:relative;
+	top:300px;
+	left:100px;
+	height: 300px;
+  width: 300px;
+  margin: auto;
+ 
+}
+
+#topSliderMenu{
+	position:relative;
+	top:0px;
+	
+	height: 600px;
+  width: 100%;
+  margin-left: 0px;
+  background-color: #AAAAAA;
+}
+
+#topSliderMenu2{
+	position:relative;
+	top:-764px;
+	
+	height: 600px;
+  width: 100%;
+  margin-left: 0px;
+  background-color: #AAAAAA;
+  opacity: .75;
+}
+#empRegForm{
+	height: 1100px;
+  	width: 40%;
+  	margin-left: 0px;
+  	background-color: #AAAAAA;
+}
+#assignment6Body{
+	background-image: url("ass6bg.jpg");
+	 background-repeat:no-repeat;
+	  background-size: cover;
+}
+.divMarker{
+	position: relative;
+	background-color: red;
+	margin: 1000;
+	z-index:1;
+	left:500;
+	
+	top:500;
+}
+#applyNow{
+	position: relative;
+	left: 500;
+}
+
+div.polaroid {
+    width: 600px;
+    height: 420px;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+div.rotate_right {
+	position:relative;
+	top:1000;
+    float: left;
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Safari */
+    transform: rotate(7deg);
+}
+
+div.rotate_left {
+    float: left;
+    -ms-transform: rotate(-8deg); /* IE 9 */
+    -webkit-transform: rotate(-8deg); /* Safari */
+    transform: rotate(0deg);
+}
+#navX{
+	background-image:url("nav.jpg");
+	width:100%;
+	height:30px;
+	opacity:.5;
+}
+.mtn{
+	background-image:url("../images/mountains.jpg");
+	width:100%;
+	height:700px;
+	margin-top: 50px;
+	
+}
+.divSpace{
+	top-margin: 50px;
+}
+#bottomMenu{
+	background-color:#AAAAAA;
+	margin-top:50px;
+	margin-bottom:50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#unforgettable{
+	margin-top:100px;
+}
+#buttonGroup{
+	position:relative;
+	left:450px;
+	top:450px;
+}
+#Regpicture{
+	background-image:url("mtb3_1.jpg");
+}
+
+#emailDiv{
+	background-color:#AAAAAA;
+}
+.earth{
+	position:relative;
+	top:1500;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:50px;
+	width:400px;
+	height:400px;
+	background-image:url("../images/earth.jpg");
+	border-radius:50%;
+	background-size:cover;
+	box-shadow: -20px -20px 50px 2px #000 inset, 0 0 20px 2px #000;
+	animation:spin 30s linear alternate infinite;
+		
+}
+
+@keyframes spin{
+	100%{background-position:100%;}
+}
