@@ -11,15 +11,46 @@
     	<script src = './js/controllers/RiderController.js'></script>
 		<script src = './js/views/RiderList.js'></script>
         <script src='./js/views/RiderRegistration.js'></script>
-        
+        <script src='./js/models/CurrentRider.js'></script>
+        <link rel = "stylesheet" type = "text/css" href ="./css/style.css" />
+		<script type = "text/javascript" src ="./js/views/indexjs/jquery-3.3.1.min.js"></script>
+		<script type = "text/javascript" src ="./js/views/indexjs/script.js"></script>
+
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src='./js/views/RiderLogin.js'></script>
+
 </head>
 <body>
-
+        <div class="jumbotron jumbotron-fluid" style="background-color: #fcf646;">
+                <div class="container text-sm-center pt-5">
+                  <h1 class="display-2">EXTREME MOUNTAIN RIDING</h1>
+                  <h1 class="display-5">Login</h1>
+                  <div class="btn-group mt-4" role="group" aria-label="Callout Buttons">
+                           
+                              
+                               
+                      </div>
+                  
+                      
+                </div>
+              </div>
+        <div class="container mx-auto" style="width: 500px;">
+                <div class ="row">
+                        <div class="col">
+                                <div class="form-group">
+                                <input id = 'login_uname' type = 'text' placeholder="USERNAME" class="form-control">
+                                <input id = 'login_password', type ='password' placeholder="PASSWORD" class="form-control">
+                                <button id='login_submit'  value='Submit' class="form-control btn btn-warning">Login</button>
+                                </div>                         
+                        </div>
+                </div>
+                
+                
+                 
+        </div>
+         
    
-        Username:<input id = 'login_uname' type = 'text' >
-        Password:<input id = 'login_password', type ='password'>
-        <button id='login_submit'  value='Submit'>Login</button>
+        
 
    
     

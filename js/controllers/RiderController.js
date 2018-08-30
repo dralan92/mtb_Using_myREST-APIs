@@ -5,7 +5,8 @@
 class RiderController{
 
     constructor(){
-        this.fetcher = fetcherObject;   
+        this.fetcher = fetcherObject;
+          
     }
 
     async all(){
@@ -27,19 +28,23 @@ class RiderController{
     async login(username, password){
 
         const data = await this.fetcher.fetch('riders');
-        console.log(username);
-        console.log(password);
-       
+        
+       console.log(username );
         const RiderObjs = data.riders.map((d)=>{
 
             var tempRider = new Rider(d);
-            
+           
 
             if(username == tempRider.properties.username &&
                 password == tempRider.properties.password){
 
                     console.log('UserExists');
-                    window.location.href = "index.html";
+                
+                         
+                         
+                         //localStorage.setItem("storageName",getInput);
+
+                   window.location.href = "index2.html";
                     
                 }else{
                     //console.log('UserDoesntExists');
