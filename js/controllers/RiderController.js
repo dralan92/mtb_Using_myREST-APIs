@@ -48,6 +48,7 @@ class RiderController{
                     
                 }else{
                     //console.log('UserDoesntExists');
+                    document.getElementById("error_msg").innerHTML = "Login Failed.";
                 }
                 
 
