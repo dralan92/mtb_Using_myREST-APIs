@@ -31,8 +31,8 @@ class RiderRegistration{
             'zip': document.getElementById('zip').value,
             'address': document.getElementById('add').value,
 
-            'email': document.getElementById('gender').value,
-            'gender': document.getElementById('email').value,
+            'email': document.getElementById('email').value,
+            'gender': document.getElementById('gender').value,
             'dateOfBirth': document.getElementById('dob').value,
             'phone': document.getElementById('phone').value
         });
